@@ -7,11 +7,14 @@ def soma():
 #window
 janela = Tk()
 
+fr1 = Frame(janela)
+fr2 = Frame(janela)
+
 #widgets
-lb1 = Label(janela, text='resultado')
-in1 = Entry(janela)
-in2 = Entry(janela)
-bt1 = Button(janela,text='Soma', command=soma)
+lb1 = Label(fr1, text='resultado')
+in1 = Entry(fr1)
+in2 = Entry(fr1)
+bt1 = Button(fr2,text='Soma', command=soma)
 
 #Layout
 lb1.pack()
