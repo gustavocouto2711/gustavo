@@ -25,13 +25,24 @@ janela.minsize(width=300,height=100)
 janela.maxsize(width=900, height=400)
 
 #widgets
-lb1 = Label (janela, text='Peso', font= 'Arial 26')
-en1 = Entry (janela, font='Arial 26')
-lb2 = Label (janela, text='Altura', font= 'Arial 26')
-en2 = Entry (janela, font='Arial 26')
-bt1 = Button(janela, text='IMC', font='Arial 26', command=IMC)
-lb3 = Label(janela, text='Resultado', font='Arial 26')
+fr1 = Frame(janela)
+fr2 = Frame(janela)
+fr3 = Frame(janela)
+
+# frame 1
+lb1 = Label (fr1, text='Peso', font= 'Arial 26')
+en1 = Entry (fr1, font='Arial 26')
+lb2 = Label (fr1, text='Altura', font= 'Arial 26')
+en2 = Entry (fr1, font='Arial 26')
+
+# frame 2
+bt1 = Button(fr3, text='IMC', font='Arial 26', command=IMC)
+lb3 = Label(fr2, text='Resultado', font='Arial 26')
+
 #layout
+fr1.pack()
+fr2.pack()
+fr3.pack()
 lb1.grid(row=0, column=0)
 en1.grid(row=0, column=1)
 lb2.grid(row=1, column=0)
