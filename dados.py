@@ -3,6 +3,12 @@ from tkinter import *
 
 root = Tk()
 
+
+
+
+
+
+
 fr1 = Frame(root)
 fr2 = Frame(root)
 fr3 = Frame(root)
